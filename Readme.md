@@ -15,7 +15,7 @@ DB_NAME=
 - run the command: npm run start
 
 ## DEPLOYMENT URL
-- https://dashboard.render.com/web/srv-crh2t4d6l47c73c1tr8g
+- https://deployment-assignment-vhvz.onrender.com
 
 ## Test Data
 - provided is the json file with dummy data
