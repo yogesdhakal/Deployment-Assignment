@@ -17,3 +17,7 @@ DB_NAME=
 ## DEPLOYMENT URL
 - https://dashboard.render.com/web/srv-crh2t4d6l47c73c1tr8g
 
+## Test Data
+- provided is the json file with dummy data
+- import it in postman and run the collection starting with POST request first
+
