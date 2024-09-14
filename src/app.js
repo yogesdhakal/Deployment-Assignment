@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get("/",(req,res) =>{
-  return res.redirect("/participants/")
+  return res.redirect("/participants")
 })
 
 // Middleware to parse JSON bodies
