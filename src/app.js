@@ -31,9 +31,7 @@ new Promise((resolve) => {
   }, 2000);
 });
 
-app.get("/", (req, res) => {
-  res.redirect("/participants", { message: "Welcome to the Census API!" });
-});
+
 
 // Apply Basic Auth to all routes
 app.use(basicAuthMiddleware);
