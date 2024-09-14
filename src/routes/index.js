@@ -22,6 +22,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/participants", async (req, res) => {
+  try {
+    const data = await getParticipantsData()
+    return successResponse(res, {
+      data
+    });
+  } catch (error) {
+    return errorResponse(res, error);
+  }
+});
+
 // returns all participant data including firstname and lastname
 router.get("/details", async (req, res) => {
   try {
