@@ -14,12 +14,11 @@ const router = express.Router();
 // returns all participant data including all fields
 router.get("/", async (req, res) => {
   try {
-    const data = await getParticipantsData()
-    return successResponse(res, {
-      data
-    });
+    // You can include any additional logic here if needed
+    return res.send("Welcome to the Census API");
   } catch (error) {
-    return errorResponse(res, error);
+    // Handle any errors if necessary
+    return res.status(500).send("An error occurred");
   }
 });
 
