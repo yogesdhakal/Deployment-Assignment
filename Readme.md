@@ -20,4 +20,5 @@ DB_NAME=
 ## Test Data
 - provided is the json file with dummy data
 - import it in postman and run the collection starting with POST request first
+- use the deployment URL as the base URL
 
