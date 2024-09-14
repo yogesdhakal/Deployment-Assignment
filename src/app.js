@@ -10,9 +10,9 @@ const { seedDefaultAdmin } = require('./services/adminService');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  return res.send("Welcome to the Census API");
-});
+app.get("/",(req,res) =>{
+  return res.redirect("/participants/")
+})
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -31,7 +31,9 @@ new Promise((resolve) => {
   }, 2000);
 });
 
-
+app.get("/", (req, res) => {
+  res.redirect("/participants", { message: "Welcome to the Census API!" });
+});
 
 // Apply Basic Auth to all routes
 app.use(basicAuthMiddleware);
