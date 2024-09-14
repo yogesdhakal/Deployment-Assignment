@@ -10,9 +10,9 @@ const { seedDefaultAdmin } = require('./services/adminService');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/",(req,res) =>{
-  return res.redirect("/participants/")
-})
+app.get("/", (req, res) => {
+  return res.send("Welcome to the Census API");
+});
 
 // Middleware to parse JSON bodies
 app.use(express.json());
